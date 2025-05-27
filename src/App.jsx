@@ -1,5 +1,5 @@
 import Sidebar from "./components/Sidebar/Sidebar";
-import "./app.css";
+import "./App.css";
 import Searchbar from "./components/Header/Searchbar";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Activity from "./components/Activity/Activity";
