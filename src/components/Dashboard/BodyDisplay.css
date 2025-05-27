@@ -1,0 +1,122 @@
+.body-container {
+  position: relative;
+  width: 90%;
+  max-width: 300px;
+}
+
+.body-img {
+  width: 220px;
+  display: block;
+  background-color: #eff4f7;
+  border-radius: 10px;
+}
+
+.zoom-btn {
+  position: absolute;
+  left: 60%;
+  top: 3%;
+  font-size: larger;
+  color: gray;
+  cursor: pointer;
+}
+
+.label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: #5b61f2;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Positioning the floating labels */
+.heart {
+  top: 19%;
+  right: 18%;
+  background-color: #442ed3;
+}
+
+.leg {
+  bottom: 35%;
+  left: -1vw;
+  background-color: #1cc0ed;
+}
+
+@media (max-width: 1024px) {
+  .body-container {
+    width: 60%;
+    max-width: 300px;
+  }
+  .body-img {
+    width: 180px;
+  }
+
+  .zoom-btn {
+    left: 80%;
+    top: 3%;
+  }
+
+  .label {
+    padding: 6px 8px;
+    font-size: 8px;
+  }
+  .heart {
+    top: 20%;
+    right: -8%;
+  }
+
+  .leg {
+    bottom: 34%;
+    left: -2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .body-img {
+    width: 240px;
+  }
+  .zoom-btn {
+    left: 65%;
+    top: 3%;
+  }
+  .label {
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+  }
+  .heart {
+    top: 20%;
+    right: 16%;
+  }
+  .leg {
+    bottom: 32%;
+    left: -2%;
+  }
+}
+
+@media (max-width: 480px) {
+  .body-container {
+    width: 100%;
+  }
+  .body-img {
+    width: 340px;
+  }
+  .zoom-btn {
+    left: 103%;
+  }
+  .heart {
+    top: 21%;
+    right: -8%;
+  }
+  .leg {
+    bottom: 33%;
+    left: 9%;
+  }
+  .label {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

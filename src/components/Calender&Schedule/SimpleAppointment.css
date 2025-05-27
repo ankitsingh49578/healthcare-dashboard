@@ -1,0 +1,16 @@
+.appointment-card{
+    padding: 20px 15px;
+    border-radius: 20px;
+    font-size: small;
+}
+.appointment-card .type{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.appointment-card .doctor-name{
+    margin-top: 5px;
+}

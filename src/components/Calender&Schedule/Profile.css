@@ -1,0 +1,21 @@
+.profile {
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.profile .icon {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile {
+    margin-top: 20px;
+  }
+}

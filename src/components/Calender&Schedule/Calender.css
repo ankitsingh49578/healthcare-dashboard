@@ -1,0 +1,143 @@
+.calendar-container {
+  width: 100%;
+  margin: 30px auto;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.arrows button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+}
+
+.calendar-day.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.day-name {
+  font-size: 14px;
+  color: #666;
+}
+
+.day-date {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.slots {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.slot-btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  background: #e1e1f5;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slot-btn.selected {
+  background: #4a5ee5;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .arrows button {
+    font-size: 14px;
+  }
+  .calendar-day {
+    padding: 3px;
+  }
+  .day-name {
+    font-size: 12px;
+  }
+  .day-date {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .slots {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .slot-btn {
+    padding: 5px 6px;
+    font-size: 10px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .arrows button {
+    font-size: 14px;
+  }
+  .calendar-day {
+    padding: 5px;
+  }
+  .day-name {
+    font-size: 16px;
+  }
+  .day-date {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .slot-btn {
+    padding: 7px 6px;
+    font-size: 12px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .arrows button {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  .calendar-day {
+    padding: 2px;
+  }
+  .day-name {
+    font-size: 10px;
+  }
+  .day-date {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .slot-btn {
+    padding: 6px 0px;
+    font-size: 10px;
+    border-radius: 10px;
+  }
+}

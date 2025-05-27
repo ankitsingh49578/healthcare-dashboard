@@ -1,0 +1,39 @@
+.container {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: gray;
+  pointer-events: none;
+}
+.container input {
+  width: 100%;
+  padding: 13px 0 13px 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.bell-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: gray;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}

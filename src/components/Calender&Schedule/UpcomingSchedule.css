@@ -1,0 +1,31 @@
+.upcoming-schedule {
+  margin-top: 25px;
+}
+
+.upcoming-schedule .header {
+  margin-bottom: 15px;
+}
+
+.upcoming-schedule .upcoming-day-header {
+  color: gray;
+  margin: 20px 0 10px 0;
+}
+.upcoming-schedule .thursday {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.upcoming-schedule .saturday {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .upcoming-schedule .thursday {
+    flex-wrap: wrap;
+  }
+  .upcoming-schedule .saturday {
+    flex-wrap: wrap;
+  }
+}
